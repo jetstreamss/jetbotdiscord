@@ -21,7 +21,7 @@ const emoji = {
 };
 client.on('ready', function () {
     console.log("Bot Online.");
-    client.user.setActivity("Life's Illusions!", { type: "Watching" });
+    client.user.setActivity("Planes Crash", { type: "Watching" });
   });
 
   client.on('message', function(message){
