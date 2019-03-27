@@ -41,10 +41,7 @@ client.on('ready', function () {
     {
         message.reply('Good Morning!');
     }
-    if(message.content == 'illusions'||'Illusions')
-    {
-        message.reply('ILLUSIONS ARE EVERYWHERE!');
-    }
+    
     if(message.content == 'Bot have you been to space?')
     {
         message.reply('Literally all the time.');
