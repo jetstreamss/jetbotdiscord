@@ -25,9 +25,21 @@ client.on('ready', function () {
   });
 
   client.on('message', function(message){
-    if(message.content == 'Hello')
+    if(message.content == 'Good morning')
     {
-        message.reply('Life is an Illusion!');
+        message.reply('Good Morning!');
+    }
+    if(message.content == 'Good Morning')
+    {
+        message.reply('Good Morning!');
+    }
+    if(message.content == 'good morning')
+    {
+        message.reply('Good Morning!');
+    }
+    if(message.content == 'goodmorning')
+    {
+        message.reply('Good Morning!');
     }
     if(message.content == 'Bot have you been to space?')
     {
