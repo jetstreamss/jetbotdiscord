@@ -65,23 +65,23 @@ client.on('ready', function () {
 	if (message.channel.id == 521578128175398936) { //if link was posted outside of #look-at-this-stuff
 
 		//check to see if the message includes common url substrings
-		if (message.includes("https")) {
+		if (message.content.includes("https")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.includes("http")) {
+		if (message.content.includes("http")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.includes("www.")) {
+		if (message.content.includes("www.")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.includes(".com")) {
+		if (message.content.includes(".com")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.includes(".net")) {
+		if (message.content.includes(".net")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
