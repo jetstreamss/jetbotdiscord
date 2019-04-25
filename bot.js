@@ -62,7 +62,7 @@ client.on('ready', function () {
 	// Auto Moderate Link Posting
 
 	//if the message was sent outside of the preferred link channel
-	if (message.channel.id != 535617991610597386) { //if link was posted outside of #look-at-this-stuff
+	if (message.channel.id == 521578128175398936) { //if link was posted outside of #look-at-this-stuff
 
 		//check to see if the message includes common url substrings
 		if (message.includes("https")) {
