@@ -61,27 +61,27 @@ client.on('ready', function () {
 	  
 	// Auto Moderate Link Posting
 
-	//if the message was sent outside of the preferred link channel
-	if (message.channel.id == 521578128175398936) { //if link was posted outside of #look-at-this-stuff
+	//if the message was sent in the hangar
+	if (message.channel.id == 521578128175398936) { //if link was posted in #the-hangar
 
 		//check to see if the message includes common url substrings
 		if (message.content.includes("https")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.content.includes("http")) {
+		else if (message.content.includes("http")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.content.includes("www.")) {
+		else if (message.content.includes("www.")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.content.includes(".com")) {
+		else if (message.content.includes(".com")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
-		if (message.content.includes(".net")) {
+		else if (message.content.includes(".net")) {
 			message.delete();
 			message.reply('Links are not allowed in this channel.');
 		}
