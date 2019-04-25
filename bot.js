@@ -58,6 +58,35 @@ client.on('ready', function () {
     {
         message.reply('Yes, it is flat.');
     }
+	  
+	// Auto Moderate Link Posting
+
+	//if the message was sent outside of the preferred link channel
+	if (message.channel.id != 535617991610597386) { //if link was posted outside of #look-at-this-stuff
+
+		//check to see if the message includes common url substrings
+		if (message.includes("https")) {
+			message.delete();
+			message.reply('Links are not allowed in this channel.');
+		}
+		if (message.includes("http")) {
+			message.delete();
+			message.reply('Links are not allowed in this channel.');
+		}
+		if (message.includes("www.")) {
+			message.delete();
+			message.reply('Links are not allowed in this channel.');
+		}
+		if (message.includes(".com")) {
+			message.delete();
+			message.reply('Links are not allowed in this channel.');
+		}
+		if (message.includes(".net")) {
+			message.delete();
+			message.reply('Links are not allowed in this channel.');
+		}
+	}
+
     if(message.channel.id == 548617194821648406||559088290381168651){ if(message.member.hasPermission("MANAGE_MESSAGES")){
     if(message.content == 'Purge'){
         let messagecount = parseInt(50);
